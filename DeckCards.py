@@ -1,4 +1,4 @@
-from card_deck import Card 
+from Card import Card 
 
 
 
@@ -14,5 +14,8 @@ class DeckCards:
                 card = Card(suit,rank)
                 self.cards.append(card)
 
+                    
 
+    
+             
 

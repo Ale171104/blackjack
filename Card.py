@@ -8,7 +8,6 @@ class Card:
         self.suit = suit
         self.rank = rank
  
-
         
 
     def get_value(self):
