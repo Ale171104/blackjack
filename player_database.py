@@ -1,3 +1,5 @@
-#from Player import Player
+from Player import Player
 
-#player1 = Player()
+
+player1 = Player()
+house = Player()
