@@ -32,4 +32,7 @@ class Card:
     def printcard(self):
        print(self.suit,self.rank,self.get_value())
 
+    def printcard_hand(self):
+        print(self.suit,self.rank)   
+
      
