@@ -1,4 +1,5 @@
 from Player import Player
+from player_database import house
 from deck_database import deck
 import random
 
@@ -111,7 +112,7 @@ class Blackjack:
                                 break
 
                     elif player.total_value > 21:
-                        player.loses = player1.loses + 1
+                        player.loses = player.loses + 1
                         player.limit_exceed = True
 
                         print("limit exceeded")  
@@ -147,10 +148,10 @@ class Blackjack:
 
 
                     print("your hand")
-                    for card in player1.hand:
+                    for card in player.hand:
                         card.printcard_hand()
 
-                    player1.print_total_value()
+                    player.print_total_value()
 
                     break
 
