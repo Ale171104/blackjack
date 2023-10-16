@@ -155,7 +155,7 @@ class Blackjack:
 
                     break
 
-                elif house.total_value > 22:
+                elif house.total_value > 21:
                     for player in self.players:
                         if player.limit_exceed == False:
                             player.wins = player.wins + 1
