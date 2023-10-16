@@ -2,6 +2,7 @@ from deck_database import deck
 
 class Player:
     
+    name = ""
     wins = 0
     loses = 0
     draws = 0
@@ -38,5 +39,20 @@ class Player:
 
     def print_record(self):    
         print("wins",self.wins,"|","loses",self.loses,"|","draws",self.draws,"|","win ratio",self.win_ratio)
+
+
+    def print_hand(self):
+        for card in self.hand:
+            print (card.printcard_hand())     
+
+
+    def get_name(self):
+        self.name = input("write your nickname: ")
+        return self.name
+    
+
+    def print_name(self):
+        print(self.name)
+
 
         
